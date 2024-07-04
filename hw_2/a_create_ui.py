@@ -17,7 +17,7 @@ class Window(QtWidgets.QWidget):
         """
 
         labelLogin = QtWidgets.QLabel("Логин")  # создаем виджет QLabel с текстом "Логин"
-        labelRegistration = QtWidgets.QLabel("Регистрация")  # создаем виджет QLabel с текстом "Регистрация"
+        labelRegistration = QtWidgets.QLabel("Пароль")  # создаем виджет QLabel с текстом "Пароль"
 
         self.lineEditLogin = QtWidgets.QLineEdit()  # создаем виджет QLineEdit
         self.lineEditLogin.setPlaceholderText("Введите логин")  # добавляем placeholderText "Введите логин" с помощью метода .setPlaceholderText()

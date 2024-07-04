@@ -84,7 +84,10 @@ class Window(QtWidgets.QWidget):
                                            f'Разрешение экрана: {QtGui.QGuiApplication.screens()[0].size().toTuple()},\n'
                                            f'Размеры окна: {self.frameGeometry().width()} x {self.frameGeometry().height()},\n'
                                            f'Минимальные размеры окна: {self.minimumWidth()} x {self.minimumHeight()},\n'
-                                           f'{self.windowState()}')
+                                           f'{self.windowState()},\n'
+                                           f'Текущие координаты окна: {self.frameGeometry().getCoords()},\n'
+                                           f'Окно находится на мониторе: {QtGui.QGuiApplication.primaryScreen().name()}, \n'
+                                           f'{QtGui.QGuiApplication.focusWindow()}')
 
 
         print(len(QtGui.QGuiApplication.screens()))  # количество экранов
